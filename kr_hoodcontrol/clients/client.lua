@@ -1,3 +1,4 @@
+
 RegisterCommand('seat', function(_, args)
     local seatNumber = tonumber(args[1]) - 2
     local playerId = PlayerPedId()

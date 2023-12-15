@@ -1,7 +1,10 @@
 RegisterCommand('giveweapon', function(_, args) 
     local target = args[1]
-    local weapon = tonumber(args[2])
+    local weapon = GetHashKey(args[2])
     local ammo = tonumber(args[3])
+    print(json.encode(args))
+    print(type(weapon))
+    print(GetHashKey(weapon))
 
     if not target or not weapon then
         TriggerEvent('chat:addMessage', {
@@ -23,7 +26,6 @@ RegisterCommand('giveweapon', function(_, args)
         })
         return
     end
-
 
 
     TriggerServerEvent('kr_giveweapon:give', target, weapon, ammo)

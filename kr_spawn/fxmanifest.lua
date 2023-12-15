@@ -8,4 +8,9 @@ resource_type 'gametype' { name = 'Tutorial Type!', }
 
 client_scripts {
     'clients/client.lua',
+    'clients/clientrespawn.lua'
+}
+
+server_scripts {
+    'server/respawn.lua'
 }

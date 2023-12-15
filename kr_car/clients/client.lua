@@ -1,6 +1,4 @@
 RegisterCommand('spawncar', function(source,args)
-    if not IsPlayerAceAllowed(source, "kr.admin") then return end
-
     local vehicleName = args[1] or 'bulldozer'
 
     if not IsModelInCdimage(vehicleName) or not IsModelAVehicle(vehicleName) then
