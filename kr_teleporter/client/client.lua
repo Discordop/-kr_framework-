@@ -1,4 +1,4 @@
--- command to go to another player 
+-- command to go to another player- 
 RegisterCommand('goto', function(_, args)
     local targetId = args[1]
 
